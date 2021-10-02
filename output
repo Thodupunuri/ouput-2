@@ -1,0 +1,8 @@
+import csv
+import pandas as pd
+myfile = open("main.csv")
+df=pd.read_csv('main.csv')
+df=df.sort_values('Red Cards')
+df=df.sort_values('Yellow Cards')
+df.iloc[:,31]
+df.iloc[:,30]
